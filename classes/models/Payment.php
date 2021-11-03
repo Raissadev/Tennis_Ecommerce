@@ -12,7 +12,7 @@
 
     public function __construct(){
       $this->url = 'https://api.stripe.com';
-      $this->key = 'sk_test_51Jcdy2HUgQFXPmU5PD2UU9FYazEDyZUrSyoX9yCf0AO02hEel5OOEi0UlfZ8lrOB7WuNJCsyV5HaU8rGWSkHkmzv00b1EBQawD';
+      $this->key = 'sk_test_suaChave';
     }
 
     public function payIntent($product_id, $user_id, $card_number, $date_valid, $cvv, $amount){
@@ -41,7 +41,7 @@
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
       curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($this->data)
     );
-      curl_setopt($ch, CURLOPT_HTTPHEADER, ["Authorization: Bearer sk_test_51Jcdy2HUgQFXPmU5PD2UU9FYazEDyZUrSyoX9yCf0AO02hEel5OOEi0UlfZ8lrOB7WuNJCsyV5HaU8rGWSkHkmzv00b1EBQawD"]);
+      curl_setopt($ch, CURLOPT_HTTPHEADER, ["Authorization: Bearer sk_test_suaChave"]);
       $this->callback = json_decode(curl_exec($ch));
       curl_close($ch);
       $idReference = $this->callback->id;
