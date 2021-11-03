@@ -11,8 +11,8 @@
     define('PASSWORD','');
     define('USER','root');
     define('DATABASE','ecommerce_tenis');
-    define('BASE','http://192.168.0.107/Projects/EcommerceTenis/');
-    define('BASE_DASHBOARD','http://192.168.0.107/Projects/EcommerceTenis/pages/dashboard/');
+    define('BASE','http://localhost/');
+    define('BASE_DASHBOARD','http://localhost/pages/dashboard/');
     define('BASE_UPLOADS',__DIR__.'/uploads/');
     define('BASE_UPLOADS_DASHBOARD',__DIR__.'/pages/dashboard/uploads/');
     define('BASE_GET_DASH_UPLOADS',BASE.'/pages/dashboard/uploads/');
