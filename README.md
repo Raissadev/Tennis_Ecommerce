@@ -1,16 +1,19 @@
-# Tennis_Ecommerce 👟
-<h2>Sobre o Projeto</h2>
-<p>Ecommerce de Tênis com o design voltado para Mobile, possui um dashboard para gestão. E é integrado com o método curl ao stripe. Possui cálculo de Frete! 😊</p>
-<h3>Front-end:</h3>
+# Tennis Ecommerce
+<h3>Sobre o Projeto</h3>
+<p>Ecommerce de Tênis com o design voltado para Mobile, possui um dashboard para gestão. E é integrado com o método curl ao stripe. Possui cálculo de Frete!</p>
+
 <ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
-</ul>
-<h3>Back-end:</h3>
-<ul>
-  <li>PHP</li>
-  <li>Database: MySql</li>
+  <li>Lenguages:</li>
+  <i>PHP, JavaScript e SQL</i>
+  
+  <li>Database:</li>
+  <i>MySql</i>
+  
+  <li>Style:</li>
+  <i>Cascading Style Sheets</i>
+  
+  <li>Markup Language:</li>
+  <i>HTML</i>
 </ul>
 
 ![ecommerceShoesGifMobile](https://user-images.githubusercontent.com/82960240/140240116-d3cb68c5-a2f7-4cfa-b117-71e28e840ece.gif)
