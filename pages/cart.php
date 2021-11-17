@@ -20,7 +20,7 @@
             <?php 
             @$orders = \models\productsModel::getOrders();
             if(isset($_GET['delete'])){
-                \models\productsModel::deleteCart($_GET['id']); 
+                \controller\productsController::deleteCart($_GET['id']); 
                 header('Location: '.BASE.'cart');
             }
             $amount = 0;
@@ -71,14 +71,11 @@
                 </div>
                 <input type="hidden" name="amount" value="<?php echo @$amount; ?>" />
                 <input type="hidden" name="product_id" value="<?php
-                @$orders = \models\productsModel::getOrders();
-                foreach($orders as $key => $value){
                     @$id = (int)$value['product_id'];
                     @$itemOrder = \MySql::connect()->prepare("SELECT * FROM `products` WHERE  id = '$id'");
                     @$itemOrder->execute();
                     @$itemOrder = @$itemOrder->fetch();
                     echo $itemOrder['id'].',';
-                }
                 ?>" />
                 <input type="hidden" name="user_id" value="<?php echo $_SESSION['id'] ?>" />
                 <button type="submit" name="payment" class="effectBox"><i class="ri-send-plane-fill"></i></button>

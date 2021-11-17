@@ -1,5 +1,5 @@
 <?php
-    \models\accessModel::login();
+    \controller\accessController::loginUser();
 ?>
 
 <section class="containerAccess h75vh itemsFlex alignCenter justCenter">

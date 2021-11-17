@@ -64,7 +64,7 @@
                 <a class="buttonOpenFormRating"><i class="ri-close-fill"></i></a>
                 <?php
                     if(isset($_POST['update_user'])){
-                        \models\userModel::updateUser($_POST['name'], $_POST['email'], $_POST['password'], $_POST['image'], $_POST['latitude'], $_POST['longitude'], $_POST['cep'], $_POST['road'], $_POST['type']);                        
+                        \controller\userController::updateUser($_POST['name'], $_POST['email'], $_POST['password'], $_POST['image'], $_POST['latitude'], $_POST['longitude'], $_POST['cep'], $_POST['road'], $_POST['type']);                        
                     }
                 ?>
                 <input type="text" name="name" value="<?php echo $_SESSION['name']; ?>" placeholder="Seu Nome" />

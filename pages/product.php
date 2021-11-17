@@ -6,7 +6,7 @@
             return;
             echo "<script> Location.reload(); </script>";
         }
-        \models\productsModel::getOptionsOrder($_POST['product_id'], $_POST['user_id'], $_POST['price'], $_POST['color'], $_POST['size']);
+        \controller\productsController::getOptionsOrder($_POST['product_id'], $_POST['user_id'], $_POST['price'], $_POST['color'], $_POST['size']);
     }
 ?>
 <style>

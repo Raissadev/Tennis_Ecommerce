@@ -39,7 +39,7 @@
             <form method="post" class="box itemsFlex flexWrap positionRelative">
                 <a class="buttonOpenForm"><i class="ri-close-fill"></i></a>
                 <?php
-                    \models\productsModel::postFeedback();
+                    \controller\productsController::postFeedback();
                 ?>
                 <ul class="rate stars marginDownSmallIn itemsFlex">
                     <li><input type="checkbox" name="star" value="1" id="oneStar" /><label for="oneStar"><i class="ri-star-fill star starOne"></i></label></li>

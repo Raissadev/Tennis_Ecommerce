@@ -1,6 +1,6 @@
 <?php 
-    \models\dashboardModel::getAddVisits(); 
-    \models\productsModel::deleteOrder();
+    \controller\dashboardController::getAddVisits(); 
+    \controller\productsController::deleteOrder();
 ?>
 <!DOCTYPE html>
 <html>

@@ -1,5 +1,5 @@
 <?php
-    \models\dashboardModel::registerProduct();
+    \controller\dashboardController::registerProduct();
 ?>
 <section class="containerAddProduct h100 itemsFlex alignCenter justCenter marginDownSmall">
     <div class="wrap w80">

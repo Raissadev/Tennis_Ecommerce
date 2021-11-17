@@ -1,5 +1,5 @@
 <?php
-    \models\accessModel::register();
+    \controller\accessController::registerUser();
 ?>
 <section class="containerAccess h100 itemsFlex alignCenter justCenter marginDownSmallIn">
     <div class="wrap w90 w80Desktop">
